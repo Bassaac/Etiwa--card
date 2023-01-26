@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Card</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body {
+                background-color: #ff6036;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 20px;
+                font-family: 'lato';
+            }
+
+            section {
+                width: 32%;
+                height: 90vh;
+            }
+
+            .child1 {
+                color: white;
+                width: 100%;
+                height: 50%;
+                background: url(./g2.jpg);
+                background-size: cover;
+                background-position: top;
+            }
+
+            .child2 {
+                width: 100%;
+                height: 50%;
+                background-color: #fff;
+                display: flex;
+                /* padding: 40px; */
+                flex-direction: column;
+            }
+
+            .abs p {
+                position: absolute;
+            }
+
+            .abs-div {
+                width: 100%;
+                height: 100%;
+                background-color: #1e096886;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
+
+            .abs-div h1,
+            p {
+                margin-left: 20px;
+
+            }
+
+            p {
+                color: #ff6036;
+                margin-bottom: 20px;
+            }
+
+            .menu i {
+                float: right;
+                padding: 20px;
+            }
+
+            .cch1 {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cch2 {
+                width: 20%;
+
+            }
+
+            .col1 p {
+                color: black;
+                margin: 0;
+                line-height: 1.4;
+                word-spacing: 2px;
+
+            }
+
+            p.abs-p {
+                position: absolute;
+            }
+
+            .ncol {
+                line-height: .0;
+            }
+
+            .ncol p {
+                margin-left: 0;
+                font-size: 7px;
+                color: black;
+            }
+
+            .ncol h3 {
+                font-weight: 400;
+                letter-spacing: .8px;
+            }
+
+            .about:after {
+                content: '';
+                width: 39px;
+                height: 3px;
+                border-radius: 25px;
+                background-color: black;
+                position: absolute;
+                display: block;
+            }
+
+            .col2 {
+                display: flex;
+                justify-content: space-between;
+                width: 30%;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .col2 i{
+                color: rgba(99, 99, 99, 0.89);
+            }
+            i.fa-dribbble:hover{
+                color: brown;
+                transform: rotate(360deg);
+                font-size: 17px;
+                transition: all .5s;
+            }
+            i.fa-behance:hover{
+                color: #0054f7;
+                transform: rotate(360deg);
+                font-size: 17px;
+                transition: all .5s;
+            }
+            i.fa-twitter:hover{
+                color: #52a8e7;
+                transform: rotate(360deg);
+                font-size: 17px;
+                transition: all .5s;
+            }
+            i.fa-github:hover{
+                color: #9656b0;
+                transform: rotate(360deg);
+                font-size: 17px;
+                transition: all .5s;
+            }
+
+            .col3 button:nth-child(1) {
+                padding: 10px 30px;
+                background-color: #ff6036;
+                color: white;
+                border-radius: 20px;
+                margin-right: 10px;
+                border: none;
+                cursor: pointer;
+                width: 130px;
+            }
+
+            .col3 button:nth-child(2) {
+                padding: 10px 30px;
+                width: 130px;
+                background-color: transparent;
+                color: #ff6036;
+                border-radius: 20px;
+                margin-right: 10px;
+                border: 1px solid #ff6036;
+
+                cursor: pointer;
+            }
+
+            .col3 button:nth-child(1):hover {
+                box-shadow: 0px 5px 11px 0px #0000004f;
+            }
+
+            .col3 button:nth-child(2):hover {
+                background-color: #ff6036;
+                color: white;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <section>
+            <div class="child1">
+                <div class="abs-div">
+                    <div class="menu"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div>
+                        <h1>Riya <br> Mehra</h1>
+                        <p>
+                            Designer. IN
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="child2">
+                <div class="child2-c" style="display: flex; flex-direction: column; ">
+                    <div class="about"
+                        style="padding-left: 30px; margin-bottom:0 ; margin-top: 20px; line-height: 1.9;"> About</div>
+                </div>
+                <div class="col" style="display: flex; justify-content: space-around; ">
+
+                    <div class="col-c2" style="width: 80%;
+    
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;">
+                        <div class="col1">
+                            <p>
+                                Designer at <span>dezica</span> love to <br> make minimal and clean <br> designs.
+                            </p>
+                        </div>
+                        <div class="col2">
+                            <i class="fa-brands fa-dribbble"></i>
+                            <i class="fa-brands fa-behance"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="col3">
+                            <button>Hire Me</button>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="col-c1" style="width: 20%; width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    line-height: .3;">
+                        <div class="ncol">
+                            <h3>
+                                120
+                            </h3>
+                            <p>
+                                PROJECTS
+                            </p>
+                        </div>
+                        <div class="ncol">
+                            <h3>
+                                2.2k
+                            </h3>
+                            <p>
+                                FOLLOWERS
+                            </p>
+                        </div>
+                        <div class="ncol">
+                            <h3>
+                                9.1k
+                            </h3>
+                            <p>
+                                VIEWS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="child2">
+                <p class="abs-p">
+                    About
+                </p>
+                <div class="cch1">
+                    <div class="col1">
+                        <p>
+                            Designer at <span>dezica</span> love to <br> make minimal and clean designs.
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <i class="fa-brands fa-dribbble"></i>
+                        <i class="fa-brands fa-behance"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="col3">
+                        <button>Hire Me</button>
+                        <button>Know More</button>
+                    </div>
+                </div>
+
+                <div class="cch2">
+                    <div class="ncol">
+                        <h3>
+                            120
+                        </h3>
+                        <p>
+                            PROJECTS
+                        </p>
+                    </div>
+                    <div class="ncol">
+                        <h3>
+                            2.2k
+                        </h3>
+                        <p>
+                            FOLLOWERS
+                        </p>
+                    </div>
+                    <div class="ncol">
+                        <h3>
+                            9.1k
+                        </h3>
+                        <p>
+                            views
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </body>
+
+</html>
